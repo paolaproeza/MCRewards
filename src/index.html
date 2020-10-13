@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Employee Rewards</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+	.logo{
+	width: 100px;
+	float:left;
+	margin:0 10px 0 5px;
+	}
+	
+	.logo_h1{
+		color:#fcfdff;
+		padding-top:10px;
+		font-size:40px;
+		font-style:bold;
+		font-family:Helvetica;
+	}
+	.user{
+	width:200px;
+	height:70px;
+	float:right;
+	}
+	.user_img{
+	width:70px;
+	border-color:#db0008;
+	float:right;
+	}
+	.welcome{
+	font-size:14px;
+	float:right;
+	padding-right:5px;
+	color:#fcfdff;
+	}
+	
+	.welcome_links{
+	font-size:10px;
+	font-style:italic;
+	text-decoration: underline;
+	padding-right:5px;
+	color:#fcfdff;
+	float:right;
+	}
+	
+	hr{
+	border:1px solid #e1e1e1;
+	}
+	
+	#menu{
+	width:230px;
+	float:right;
+	color:#fcfdff;
+	}
+	.menu_link{
+	font-size:16px;
+	color:#fcfdff;
+	padding:0 10px 0 10px;
+	font-style:bolder;
+	}
+	
+	.row{
+	margin-top:50px;
+	font-family:Helvetica;
+	}
+	
+	.panel-heading{
+	background-color:#eef0f1;
+	border-color:#dddddd;
+	}
+	
+	.panel-title{
+	color:#343333;
+	style:bold;
+	}
+	
+	.btn btn-default{
+	color:#343333;
+	border-color:#dddddd;
+	background-color: #eef0f1;
+	}
+	</style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background-color:#db0008">
+    <div class="container" >
+      <div class="row" >
+        <div>
+          <img class="logo" src="images/mcdonald.png"  />
+		  <div class="user">
+			<img class="user_img" src="images/user.jpg" />
+			<div class="welcome" >Welcome!</div><br />
+			<a class="welcome_links" >Logout</a><br />
+			<a class="welcome_links" >Add Task</a>
+		  </div>
+		  <h1 class="logo_h1">Employee Rewards</h1>
+          <hr/>
+          <br/>
+		   <div id="menu" style="">
+			<a class="menu_link" >Tasks </a>|
+			<a class="menu_link">Ranking</a>|
+			<a class="menu_link">About </a>
+		   <div>
+        </div>
+			 
+      </div>
+
+		
+      <div id="petsRow" class="row" >
+        <!-- PETS LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="petTemplate" style="display: none;">
+      <div class="col-sm-6 col-md-4 col-lg-3" >
+        <div class="panel panel-default panel-pet">
+          <div class="panel-heading">
+            <h3 class="panel-title" >Scrappy</h3>
+          </div>
+          <div class="panel-body">
+            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 200px; height: 200px;" src="https://sheltercity.nl/wp-content/uploads/2017/02/be76bad47b6f3757610b0bc63aa7a070_silhouette-woman-face-clipart-person-face-silhouette_582-597.png" data-holder-rendered="true">
+            <br/><br/>
+            <strong>Name</strong>: <span class="pet-breed">Paola Proêza</span><br/>
+            <strong>Need help for</strong>: <span class="pet-age">Open Test Integration</span><br/>
+            <strong>Location</strong>: <span class="pet-location">RDI Office</span><br/><br/>
+            <a class="btn btn-default" href="gettask.html" type="button">I can help!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
